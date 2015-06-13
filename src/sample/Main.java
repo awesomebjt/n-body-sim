@@ -23,8 +23,18 @@ public class Main extends Application {
         primaryStage.setTitle("N-Body Simulator");
         primaryStage.setScene(new Scene(root, 800, 600, Color.BLACK));
 
-        Color colors[] = new Color[] {Color.RED, Color.BLUE, Color.AQUA, Color.YELLOW, Color.GREEN};
-        for(int i=0; i<5; i++) {
+        Color colors[] = new Color[] {
+                Color.RED,
+                Color.BLUE,
+                Color.AQUA,
+                Color.YELLOW,
+                Color.GREEN,
+                Color.PURPLE,
+                Color.BISQUE,
+                Color.CRIMSON,
+                Color.ORANGE,
+                Color.HONEYDEW};
+        for(int i=0; i<10; i++) {
             Body b = new Body();
             int m = (int)(Math.random()*20);
             b.setRadius(m);
